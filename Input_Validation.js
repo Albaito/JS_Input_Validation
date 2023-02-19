@@ -23,7 +23,7 @@ function isInteger(value, name) {
     return name + ' is a non-whole number, please enter only whole numbers for ' + name
 }
 /**
- * Checks if the value variable is a number
+ * Checks if the value parameter is a number
  * @param {*} value the value of the variable
  * @param {*} name string that'll be used if variable fails the check
  * @returns Either string of '' if value passes || Formatted error using the name string if it fails
