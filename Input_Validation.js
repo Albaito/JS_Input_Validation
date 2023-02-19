@@ -15,7 +15,7 @@ function isInteger(value, name) {
 
  function isNumeric(value, name){
     if (isNaN(value)){
-        return name + ' is non-numeric, please enter a number for ' + name
+        return 'Entered value for ' + name + ' is non-numeric'
     }
     return ''
  }
