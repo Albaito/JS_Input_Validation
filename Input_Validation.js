@@ -1,5 +1,5 @@
 /**
- * 
+ * Checks if the value variable is present
  * @param {*} value the value of the variable
  * @param {*} name the name of the input as a string
  * @returns an empty '' string if variable is present || Formatted error with the name value if it isn't
@@ -11,7 +11,7 @@
     return ''
  }
 /**
- * 
+ * checks if value variable is an integer
  * @param {*} value the value of the variable
  * @param {*} name string containing name of the variable
  * @returns either string of '' if value passes || Formatted error with name value if it fails
@@ -23,7 +23,7 @@ function isInteger(value, name) {
     return name + ' is a non-whole number, please enter only whole numbers for ' + name
 }
 /**
- * 
+ * Checks if the value variable is a number
  * @param {*} value the value of the variable
  * @param {*} name string that'll be used if variable fails the check
  * @returns Either string of '' if value passes || Formatted error using the name string if it fails
@@ -35,7 +35,7 @@ function isInteger(value, name) {
     return ''
  }
 /**
- * 
+ * Checks if value parameter is between the min and max values
  * @param {*} min Minimum value
  * @param {*} max Maximum value
  * @param {*} value The variable that'll be checked
