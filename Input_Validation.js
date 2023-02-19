@@ -2,7 +2,7 @@
  * 
  * @param {*} value the value of the variable
  * @param {*} name the name of the input as a string
- * @returns an empty '' string if variable is present | Formatted error with the name value
+ * @returns an empty '' string if variable is present || Formatted error with the name value if it isn't
  */
  function isPresent(value, name){
     if (value.length < 1 || value == ''){
@@ -14,7 +14,7 @@
  * 
  * @param {*} value the value of the variable
  * @param {*} name string containing name of the variable
- * @returns either string of '' | Formatted error with name value
+ * @returns either string of '' if value passes || Formatted error with name value if it fails
  */
 function isInteger(value, name) {
     if (Number.isInteger(value)){
@@ -26,7 +26,7 @@ function isInteger(value, name) {
  * 
  * @param {*} value the value of the variable
  * @param {*} name string that'll be used if variable fails the check
- * @returns Either string of '' | Formatted error using the name string
+ * @returns Either string of '' if value passes || Formatted error using the name string if it fails
  */
  function isNumeric(value, name){
     if (isNaN(value)){
@@ -40,7 +40,7 @@ function isInteger(value, name) {
  * @param {*} max Maximum value
  * @param {*} value The variable that'll be checked
  * @param {*} name String of the name that'll be returned if value fails the check
- * @returns 
+ * @returns Either string of '' if it passes || Formatted error using the name string if it fails
  */
  function isWithinRange(min, max, value, name){
     if (value < min ){
